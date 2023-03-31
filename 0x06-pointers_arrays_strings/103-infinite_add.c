@@ -70,3 +70,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		j--;
 		i--;
 	}
+	if (digits == size_r)
+		return (0);
+	*(r + digits) = '\0';
+	rev_string(r);
+	return (r);
+}
