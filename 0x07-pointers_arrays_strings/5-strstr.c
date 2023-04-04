@@ -1,44 +1,44 @@
-#include "main.h"
+#include"main.h"
 
 /**
- * _strstr - function that locates a substring.
- * @haystack: first value -char
- * @needle: second value - char
+ * _strstr - prints the consecutive caracters of s1 that are in s2.
+ * @haystack: source string
+ * @needle: searching string
  *
- * Return: char with result
+ * Return: new string.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int count = 0, a = 0, k, j = 0, l, i = 0;
-	char *p;
+while (*haystack)
+{
+if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+{
+return (haystack);
+}
+else
+{
+haystack++;
+}
+}
+return (0);
+}
+/**
+ * coincidence - define if the string b is inside a.
+ * @a: source string
+ * @b: string to be searched
+ *
+ * Return: 1 if there is coincidence, otherwise 0.
+ */
+int coincidence(char *a, char *b)
+{
+while (*b && *b == *a)
+{
+b++;
+a++;
+}
 
-	while (needle[count] != '\0')
-	{
-	count++;
-	}
-	while (haystack[i] != '\0')
-	{
-	i++;
-	}
-	if (count == 0)
-	return (haystack);
-	while (haystack[j] != '\0')
-	{
-	if (haystack[j] == needle[0])
-	{
-	p = &haystack[j;
-	l = j;
-	a = 0;
-	for (k = 0; k < count; k++)
-	{
-	if (haystack[l] == needle[k])
-	a++;
-	l++;
-	}
-	}
-	if (a == count)
-	return (p);
-	j++;
-	}
-	return ('\0');
-	}
+if (*b == '\0')
+return (1);
+else
+return (0);
+}
