@@ -2,15 +2,6 @@
 
 /*laila22haz*/
 /**
- *_sqrt_recursion - square root
- *@n: integer
- *Return: value squeare
- */
-int _sqrt_recursion(int n)
-{
-	return (_sqrt2(1, n));
-}
-/**
  *_sqrt2 - find square
  *@a: integer
  *@b: integer
@@ -24,4 +15,13 @@ int _sqrt2(int a, int b)
 	return (a);
 	else
 	return (_sqrt2(a += 1, b));
+}
+/**
+ *_sqrt_recursion - square root
+ *@n: integer
+ *Return: value squeare
+ */
+int _sqrt_recursion(int n)
+{
+	return (_sqrt2(1, n));
 }
