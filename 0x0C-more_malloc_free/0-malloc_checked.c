@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * *malloc_checked - allocates memory using
+ * malloc_checked - allocates memory using
  * @b : the first argument
  *
- * Return : return pointer
+ * Return: return pointer
  */
 void *malloc_checked(unsigned int b)
 {
