@@ -10,7 +10,7 @@
  * @owner: fourth member
  *
  * Description: Longer description
- * Return: structre
+ * Return: na
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
