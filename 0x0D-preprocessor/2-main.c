@@ -1,20 +1,12 @@
 #include <stdio.h>
-
-#define BLURT printf ("%s\n", __FILE__)
 /*laila22haz*/
 /**
  * main - print the name of the file it was compiled from
  *
  * Return: 0
  */
-void help_function ()
+int main(void)
 {
-	        BLURT;
-}
-
-int main ()
-{
-	BLURT;
-	help_function ();
+	printf("%s\n", __FILE__);
 	return (0);
 }
