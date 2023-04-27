@@ -21,11 +21,10 @@ size_t print_list(const list_t *h)
 		printf("[%d] %s\n", link->len, link->str);
 	}
 	else
-	{
+	
 		printf("[0] (nil)\n");
-	}
-		count += 1;
-		link = link->next;
+	count += 1;
+	link = link->next;
 	}
 	return (count);
 }
