@@ -11,11 +11,12 @@
  * @len : the second element
  * @next : the third element
  *
+ * Description: linked list node structure
  */
 typedef struct list_t
 {
 	char *str;
-	unsigned int len;
+	unsigned int leng
 	struct list_t *next;
 }list_t;
 
