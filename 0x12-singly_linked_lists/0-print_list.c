@@ -10,13 +10,14 @@ size_t print_list(const list_t *h)
 {
 	int count = 0;
 	const list_t *link;
+
 	link = h;
 
 	while (link != NULL)
 	{
 	if (link->str != NULL)
 	{
-		printf("[%d] %s\n)", link->len,link->str);
+		printf("[%d] %s\n)", link->len, link->str);
 	}
 	else
 	{
