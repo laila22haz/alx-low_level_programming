@@ -24,7 +24,7 @@ size_t print_list(const list_t *h)
 	{
 		printf("[0] (nil)\n");
 	}
-		count++;
+		count += 1;
 		link = link->next;
 	}
 	return (count);
