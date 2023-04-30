@@ -6,17 +6,16 @@
 #include <unistd.h>
 
 /**
- * struct list_t - list with arguments
- * @str : the first element
- * @len : the second element
+ * struct listint - list with arguments
+ * @n : the second element
  * @next : the third element
  *
  * Description: linked list node structure
  */
-typedef struct listint_t
+typedef struct listint
 {
 	int n;
-	struct listint_t *next;
+	struct listint *next;
 } listint_t;
 
 int _putchar(char c);
