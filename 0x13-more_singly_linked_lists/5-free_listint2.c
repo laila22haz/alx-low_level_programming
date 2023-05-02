@@ -3,7 +3,7 @@
 /*laila22haz*/
 /**
  * free_listint2 - a function that frees a listint_t list
- * *head : argument
+ * head : argument
  *
  * Return: NOTHING
  */
