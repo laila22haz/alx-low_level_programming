@@ -3,8 +3,7 @@
 /*laila22haz*/
 /**
  * free_listint2 - a function that frees a listint_t list
- * head : argument
- *
+ *@head: pointer to the head of the list
  * Return: NOTHING
  */
 void free_listint2(listint_t **head)
