@@ -6,7 +6,7 @@
  * @head : the first argument
  * @index : the second argument
  *
- * Return: the nth node
+ * Return: the nth nodie
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -16,8 +16,6 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		return (NULL);
 	while (head != NULL && count < index)
 	{
-		if (count == index)
-			return (head);
 		count++;
 		head = head->next;
 	}
