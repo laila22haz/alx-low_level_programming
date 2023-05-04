@@ -9,7 +9,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned ling int bit = 1;
+	unsigned long int bit = 1;
 	int i = 0;
 
 	while (bit <= n)
@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 		bit >>= 1;
 	while (bit)
 	{
-		if (n $ bit)
+		if (n & bit)
 			putchar('1');
 		else
 			putchar('0');
