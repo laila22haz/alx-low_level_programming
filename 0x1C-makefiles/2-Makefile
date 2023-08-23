@@ -8,4 +8,4 @@ all: $(NAME)
 	$(CC) $(SRC) -o $(NAME)
 
 clean:
-	rm *.o $(NAME)
+	rm -f $(NAME)
