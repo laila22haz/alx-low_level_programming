@@ -1,17 +1,17 @@
-#!/usr/bin/bash
-CC = gcc
+CC=gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = make clean
+RM = rm -f
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean: $(RM)
-	rm *.~ *.swp
+clean:
+	$(RM) *.~ $(NAME)
 
-oclean: $(RM)
-	rm *.o $(NAME)
+oclean:
+	$(RM) $(OBJ)
 
-fclean: $(RM)
-	rm *.o $(NAME) *.~ *.swp
+fclean: clean oclean
+
+re: fclean all
