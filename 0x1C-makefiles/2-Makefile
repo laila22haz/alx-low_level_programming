@@ -1,16 +1,9 @@
-#!/usr/bin/bash
-CC=gcc
+CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c = .o)
 NAME = school
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
-all: $(NAME)
-	$(CC) $(SRC) -o $(NAME)
-
-main.o: main.c
-	$(CC) -c main.c
-
-school.o: school.c
-	$(CC) -c school.c
 clean:
 	rm *.o $(NAME)
