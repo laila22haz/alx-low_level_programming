@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+CC=gcc
+SRC = main.c school.c
+OBJ = main.o school.o
+NAME = school
+all:
+	$(CC) $(SRC) -o $(NAME)
+
+clean:
+	rm *.o $(NAME)
