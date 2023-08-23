@@ -7,11 +7,11 @@ RM = make clean
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-clean:
+clean: $(RM)
 	rm *.~ *.swp
 
-oclean:
+oclean: $(RM)
 	rm *.o $(NAME)
 
-fclean:
+fclean: $(RM)
 	rm *.o $(NAME) *.~ *.swp
