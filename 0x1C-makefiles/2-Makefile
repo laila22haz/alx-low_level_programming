@@ -7,5 +7,10 @@ NAME = school
 all: $(NAME)
 	$(CC) $(SRC) -o $(NAME)
 
+main.o: main.c
+	$(CC) -c main.c
+
+school.o: school.c
+	$(CC) -c school.c
 clean:
-	rm -f $(NAME)
+	rm *.o $(NAME)
